@@ -63,20 +63,20 @@ The Feedback App is a full-stack application that allows users to submit feedbac
 
 
 ### Usage
-- **Submitting Feedback/**
+- **Submitting Feedback**
    - Open the application in your browser.
    - Fill out the feedback form with your name and feedback message.
    - Click "Submit" to send the feedback.
-- **Viewing Feedback/**
+- **Viewing Feedback**
    - Scroll through the feedback list on the main page.
      Feedback entries are paginated, with 10 entries per page.
 
 
 ### Notes
 
-- **Rate Limiting/**
+- **Rate Limiting**
    - The backend /feedback POST endpoint is rate-limited to one request per 10 seconds per IP to prevent spam.
-- **Web Workers/**
+- **Web Workers**
    - Web Workers are used for fetching and posting feedback data to avoid blocking the main thread.
-- **Error Handling/**
+- **Error Handling**
    - Both the frontend and backend include basic error handling to manage network issues and invalid input.   
